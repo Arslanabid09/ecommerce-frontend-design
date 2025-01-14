@@ -1,0 +1,41 @@
+# Node modules
+node_modules/
+
+# Tailwind CSS build artifacts
+public/build/
+dist/
+*.css.map
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS and editor-specific files
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Temporary files
+*.tmp
+*.log
+
+# Git-specific files
+*.patch
+*.diff
+*.orig
+
+# Build files
+build/
+coverage/
