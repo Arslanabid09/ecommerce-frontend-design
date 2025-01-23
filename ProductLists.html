@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Design</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- fontAwesome icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-slate-200 font-inter">
+    <!-- header -->
+    <div id="navbar-placeholder">
+        <!-- fetching data using js -->
+    </div>
+    <main class="flex justify-between gap-3 p-10">
+        <!-- for options -->
+    <section class="bg-red-700 w-[25%]">
+        
+    </section>
+    <!-- for products -->
+    <section class="w-[75%] space-y-4 ">
+        <div class="flex justify-between items-center bg-white  p-4 rounded-md border border-slate-300">
+            <span>10,911 items <span class="font-semibold">Mobile accessory</span>
+        </span>
+        <div class="space-x-1">
+            <input type="checkbox"  name="checkbox" id="checkbox">
+            <span>verified only</span>
+            <select name="" id="" class=" py-1 px-4 rounded-md outline-none border border-slate-300">
+                <option  value="Featured">Featured</option>
+                <option  value="Featured2">Featured2</option>
+                <option  value="Featured3">Featured3</option>
+                <option  value="Featured4">Featured4</option>
+            </select>
+            <div class="inline-block -space-x-1 border border-slate-300 rounded">
+                <!-- list -->
+                <button id="product-list" class="fa-solid fa-list border-r border-r-slate-300  py-1 px-2 cursor-pointer bg-slate-200 "></button>
+               <!-- grid -->
+                <button id="product-grid" class="fa-solid fa-border-all border-r border-r-slate-300  cursor-pointer py-1 px-2"></button>
+            </div>
+        </div>
+        </div>
+        <!-- filtered data -->
+        <div class="flex items-center px-5 gap-3">
+            <span class="bg-white text-slate-500 py-1 px-2 flex  items-center gap-5 border border-customBlue rounded font-light space-x-4 cursor-pointer">samsung   <i class="fa-solid fa-xmark"></i></span>
+            <span class="bg-white text-slate-500 py-1 px-2 flex  items-center gap-5 border border-customBlue rounded font-light space-x-4 cursor-pointer">apple<i class="fa-solid fa-xmark"></i></span>
+            <span class="bg-white text-slate-500 py-1 px-2 flex  items-center gap-5 border border-customBlue rounded font-light space-x-4 cursor-pointer">poco<i class="fa-solid fa-xmark"></i></span>
+            <span class="bg-white text-slate-500 py-1 px-2 flex  items-center gap-5 border border-customBlue rounded font-light space-x-4 cursor-pointer">Metallic<i class="fa-solid fa-xmark"></i></span>
+            <span class="bg-white text-slate-500 py-1 px-2 flex  items-center gap-5 border border-customBlue rounded font-light space-x-4 cursor-pointer">4 star<i class="fa-solid fa-xmark"></i></span>
+            <span class="bg-white text-slate-500 py-1 px-2 flex  items-center gap-5 border border-customBlue rounded font-light space-x-4 cursor-pointer">3 star<i class="fa-solid fa-xmark"></i></span>
+            <span class="text-customBlue font-medium cursor-pointer"> clear all filters</span>
+        </div>
+        <div id="productList-container" class="grid grid-cols-3 gap-3">
+            
+        </div>
+    </section>
+    </main>
+    <!-- footer -->
+    <div id="footer-placeholder">
+        <!-- fetching data using js -->
+    </div>
+    <script type="module" src="/jsfiles/productList.js"></script>
+</body>
+</html>

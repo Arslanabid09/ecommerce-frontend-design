@@ -1,217 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce Design</title>
     <link rel="stylesheet" href="./style.css">
     <!-- fontAwesome icons CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body class="font-inter bg-slate-200">
-    <!-- header 1 -->
-    <header class="flex font-inter bg-white justify-between items-center py-4 px-8">
-        <!-- logo -->
-         <article class="flex items-center gap-2 cursor-pointer">
-                 <img class=" bg-contain w-8  bg-customBlue p-2 rounded-lg" src="./Assets/Logo.png" alt="">         
-            <h1 class="text-2xl text-customBlue font-semibold">Brand</h1>
-         </article>
-         <div class="flex bg-slate-400 border-2 border-customBlue  rounded-lg w-2/4 ">
-            <input type="text" placeholder="Search..." class="w-full  px-5 py-[0.40rem] rounded-l-lg border-none  outline-none placeholder:font-medium font-medium ">
-            <select name="category" class="border-l border-customBlue outline-none text-base px-3 py-2  bg-white text-gray-700" id="category">
-                <option value="" class="text-gray-800">All Category</option>
-                <option value="tech" class="text-gray-800 hover:bg-gray-200">Technology</option>
-                <option value="fashion" class="text-gray-800 hover:bg-gray-200">Fashion</option>
-                <option value="food" class="text-gray-800 hover:bg-gray-200">Food</option>
-                <option value="sports" class="text-gray-800 hover:bg-gray-200">Sports</option>
-                <option value="health" class="text-gray-800 hover:bg-gray-200">Health</option>
-            </select>
-            
-            <button class=" text-white bg-customBlue font-medium px-6">Search</button>
-         </div>
-         <!-- section of icons -->
-          <section class="flex  gap-6 font-light capitalize text-center">
-              <!-- profile icon -->
-              <div class="text-slate-400  text-sm cursor-pointer hover:text-slate-700 duration-500 ease-linear ">
-                <i class="fa-solid fa-user  text-lg"></i>
-                <label class="block ">profile</label>
-            </div>
-            <!-- messages -->
-            <div class="text-slate-400 text-sm cursor-pointer hover:text-slate-700 duration-500 ease-linear">
-              <i class="fa-solid fa-message text-lg"></i>
-              <label class="block">messages</label>
-            </div>
-            <!-- orders -->
-            <div class="text- text-slate-400 text-sm cursor-pointer hover:text-slate-700 duration-500 ease-linear ">
-                <i class="fa-solid fa-heart block  text-lg"></i>
-                <label class="block">Orders</label>
-              </div>
-            <!-- add to cart -->
-            <div class="text-slate-400 cursor-pointer hover:text-slate-700 duration-500 ease-linear text-sm">
-                <i class="fa-solid fa-cart-shopping text-lg"></i>
-                <label class="block">my cart</label>
-              </div>       
-    </section>
-</header>
-<!-- navbar -->
-<nav class="flex justify-between border border-slate-300 bg-white py-4  text-sm px-20 ">
-    <!-- menu Links -->
-    <div class="flex gap-10">
-        <a class=" hover:-translate-y-1 duration-500" href=""><i class="fa-solid fa-bars block text-sm"></i>  All Category</a>
-        <a class=" hover:-translate-y-1 duration-500" href="#">Hot Offers</a>
-        <a  class=" hover:-translate-y-1 duration-500" href="#">Gift Boxes</a>
-        <a class=" hover:-translate-y-1 duration-500" href="#">Projects</a>
-        <a class=" hover:-translate-y-1 duration-500" href="#">Menu item</a>
-        <a class=" hover:-translate-y-1 duration-500" href="#">Help <i class="fa-solid fa-chevron-down block text-xs"></i></a>
-        </div>
-        <div class="space-x-16">
-            <!-- language -->
-            <span> 
-                <!-- label -->
-                english,USD
-                <!-- icon  -->
-                 <i class="fa-solid fa-chevron-down block text-sm"></i></span>
-                
-                <!-- Ship to -->
-                <span>
-                    <!-- label -->
-                    Ship to
-                    <!-- image -->
-                     <img class="inline-block w-6" src="./Assets//regions/icon.png" alt=""> 
-                     <!-- icom -->
-                <i class="fa-solid fa-chevron-down block text-sm"></i>
-                </span>
-               
-        </div>
-    </nav>
+        <div id="navbar-placeholder"></div>
     <!-- home page main content -->
-    <main class="relative py-10 text-center">
-        <h1>main content here</h1>
-    </main>
-    <!-- Footer -->
-    <Footer class="absolute w-full bg-gray-300 bottom-0" >
-        <!--newsletter section -->
-        <section class="text-center  py-6 ">
-            <h3 class="text-lg font-semibold">Subscribe on our newsletter</h3>
-            <p class="text-slate-600 text-sm font-light">Get daily news on upcoming offers from many suppliers all over the world</p>
-            <div class="flex items-center my-3   mx-auto w-[30%] gap-1 rounded-lg">
-                <div class="flex items-center bg-white px-2 gap-1 rounded-lg ">
-                    <i class="fa-regular fa-envelope text-lg text-slate-400"></i>
-                <input type="text" class="border-none outline-none py-[0.40rem] px-2 w-full rounded-lg bg-transparen" placeholder="Email">
+    <main class=" p-10 space-y-10 ">
+        <!-- banner -->
+        <section class="bg-white rounded-md p-3 w-full h-auto flex gap-x-2 justify-between capitalize">
+            <!-- section category -->
+                <ul class="space-y-3 flex flex-col w-[15%]">
+                    <li class="hover:bg-blue-200 font-light hover:font-medium duration-500 ease-in p-1 rounded-md cursor-pointer">Automobiles</li>
+                    <li class="hover:bg-blue-200 font-light hover:font-medium duration-500 ease-in p-1 rounded-md cursor-pointer">Clothes and wear</li>
+                    <li class="hover:bg-blue-200 font-light hover:font-medium duration-500 ease-in p-1 rounded-md cursor-pointer">home interiors</li>
+                    <li class="hover:bg-blue-200 font-light hover:font-medium duration-500 ease-in p-1 rounded-md cursor-pointer">computer and tech</li>
+                    <li class="hover:bg-blue-200 font-light hover:font-medium duration-500 ease-in p-1 rounded-md cursor-pointer">tools,equiptments</li>
+                    <li class="hover:bg-blue-200 font-light hover:font-medium duration-500 ease-in p-1 rounded-md cursor-pointer">sports and outdoor</li>
+                    <li class="hover:bg-blue-200 font-light hover:font-medium duration-500 ease-in p-1 rounded-md cursor-pointer">animals and pets</li>
+                    <li class="hover:bg-blue-200 font-light hover:font-medium duration-500 ease-in p-1 rounded-md cursor-pointer">Machinery tools</li>
+                    <li class="hover:bg-blue-200 font-light hover:font-medium duration-500 ease-in p-1 rounded-md cursor-pointer">More category</li>
+                </ul>
+            <!-- section banner  -->
+            <section class="relative w-[65%]">
+                <img class="object-cover absolute  w-full h-full" src="./Assets/banner.png" alt="Latest trending Electronic items">
+                <div class="absolute inset-9 space-y-3">
+                    <h1 class="text-4xl font-semibold"><span class="font-light text-3xl ">lastest trending</span><br> Electronics items</h1>
+                <button class=" bg-white py-[0.4rem] px-4 rounded-md">Learn more</button>
                 </div>
-                <button class="bg-customBlue py-[0.40rem] px-4 rounded-lg text-white">Subscribe</button>
+            </section>
+            <!-- section offers and login -->
+            <section class=" w-[25%] space-y-2">
+                <div class="bg-[#E3F0FF] py-5 px-3 space-y-3 rounded-md ">
+                    <!-- profile login etc -->
+                <div class="flex gap-3">
+                <img class="w-12    rounded-full" src="./Assets/Avatar.png" alt="profile">
+                <p>Hi, user <br>let’s get stated</p>
+                </div>
+                <button class="block w-full bg-customBlue rounded-md text-white py-1 shadow shadow-black/40">join now</button>
+                <button class="block w-full bg-white rounded-md text-customBlue py-1 shadow shadow-black/10">Log in</button>
+                </div>
+                <!-- offer -->
+                 <p class=" bg-orange-600 text-white py-8 pr-10  rounded-md  text-balance pl-4">Get US $10 off with a new supplier</p>
+                 <!-- Send quotes -->
+                <p class=" bg-blue-400 w-full  text-white py-8 pr-10 rounded-md text-start text-balance pl-4">Send quotes with supplier preferences</p>
+            </section>
+        </section>
+        <!-- section for products -->
+        <section class="space-y-3 capitalize">
+            <!-- limited offers -->
+             <section class="bg-white flex items-center h-auto rounded-md overflow-hidden border border-slate-300">
+                <!-- timer -->
+                <div class="w-[25%] p-5 ">
+                    <h2 class="text-2xl font-semibold">Deals and offers</h2>
+                    <p class="text-slate-400 text-xs">Hygiene equipments</p>
+                    <div class="text-white flex justify-center gap-1 text-center mt-10">
+                        <div class="bg-slate-500  py-1 px-3 rounded">
+                            <span id="days" class=""></span>
+                            <span class="text-xs">days</span>
+
+                        </div>
+                        <!-- hours -->
+                        <div class="bg-slate-500  py-1 px-3 rounded">
+                            <span id="hours" class=""></span>
+                            <span class="text-xs">hours</span>
+                        </div>
+                        <!-- min  -->
+                        <div class="bg-slate-500  py-1 px-3 rounded">
+                            <span id="min" class=""></span>
+                            <span class="text-xs">min</span>
+                        </div>
+                        <!-- sec  -->
+                        <div class="bg-slate-500  py-1 px-3 rounded">
+                            <span id="sec" class=""></span>
+                            <span class="text-xs">sec</span>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- products -->
+                <div id="dealsAndOffers" class="w-full grid grid-cols-5">
+                    <!-- adding products here using js -->
+                </div>
+             </section>
+            <!-- Consumer electronics and gadgets -->
+            <section class="flex h-56 rounded-md overflow-hidden capitalize">
+                <!-- Link -->
+                <div class="w-[30%] relative ">
+                    <img class="absolute h-full w-full object-cover" src="./Assets/Electronics/Group970.png" alt="home and outdoor">
+                    <div class="absolute inset-4 space-y-3">
+                        <h3 class="text-xl font-medium">Consumer electronics and gadgets</h3>
+                    <button class="bg-white  rounded-md px-4 py-[0.34rem] font-medium">Source now</button>
+                    </div>
+                </div>
+                <!-- products -->
+                <div id="electronics-products" class="w-full  grid grid-cols-4">
+                    <!-- mapping products here using js -->
+    
+                </div>
+            </section>
+            <!-- home and outdoor -->
+            <section class="flex h-56 rounded-md overflow-hidden capitalize">
+                <!-- link -->
+                <div class="w-[30%] relative   ">
+                    <img class="absolute h-full w-full object-cover" src="./Assets/HomeAndOutdoor/image92.png" alt="home and outdoor">
+                    <div class="absolute inset-4 space-y-3">
+                        <h3 class="text-xl font-medium">Home and <br> outdoor</h3>
+                    <button class="bg-white  rounded-md px-4 py-[0.34rem] font-medium">Source now</button>
+                    </div>
+                </div>
+                <!-- products -->
+                <div id="home-p-container" class="w-full  grid grid-cols-4   ">
+                    <!-- mapping products here using js -->
+                </div>
+            </section>
+        </section>
+        <!-- send message to the suppliers -->
+        <section class="relative text-white  h-96 rounded-md overflow-hidden">
+            <img class="absolute h-full w-full object-cover " src="./Assets/supplier-img.png" alt="Illustration of suppliers' workflow"
+                loading="lazy">
+            <div
+                class="flex px-12 py-5 justify-between absolute bg-gradient-to-r from-[#2C7CF1] to-[#00d0ff00] inset-0">
+                <div class="w-1/3 space-y-3">
+                    <h2 class="text-3xl font-semibold">An Easy Way to Send Requests to All Suppliers</h2>
+                    <p class="text-sm">Quickly send inquiries to multiple suppliers and get competitive quotes for your
+                        business needs.</p>
+                </div>
+                <form action="#" class="bg-white rounded-md text-black w-auto p-4 flex flex-col gap-4 items-start">
+                    <label for="item-needed" class="text-lg font-medium">Send Quote to Suppliers</label>
+                    <input id="item-needed" type="text"
+                        class="bg-slate-100 border border-slate-300 px-4 py-[0.3rem] rounded placeholder:text-black placeholder:text-sm w-full outline-none"
+                        placeholder="What item you need?" required>
+
+                    <label for="details" class="sr-only">More Details</label>
+                    <textarea id="details" name="details"
+                        class="bg-slate-100 border border-slate-300 px-4 py-[0.3rem] rounded placeholder:text-black placeholder:text-sm w-full outline-none"
+                        placeholder="Type more details" required></textarea>
+
+                    <div class="flex gap-1">
+                        <label for="quantity" class="sr-only">Quantity</label>
+                        <input id="quantity" type="number"
+                            class="bg-slate-100 border border-slate-300 px-2 py-[0.3rem] rounded placeholder:text-black placeholder:text-sm outline-none"
+                            placeholder="Quantity" required>
+
+                        <label for="units" class="sr-only">Units</label>
+                        <input id="units" type="number"
+                            class="bg-slate-100 border border-slate-200 px-2 py-[0.3rem] rounded placeholder:text-black placeholder:text-sm outline-none"
+                            placeholder="Pcs" required>
+                    </div>
+
+                    <button type="submit" class="bg-customBlue text-white py-2 px-4 font-medium text-sm rounded">Send
+                        Inquiry</button>
+                </form>
             </div>
         </section>
-        <!-- links etc section -->
-         <section class="bg-white py-10 px-10 flex justify-between capitalize ">
-            <!-- logo and social links -->
-            <div class="space-y-3">
-                  <!-- logo -->
-         <article class="flex items-center gap-2 cursor-pointer">
-            <img class=" bg-contain w-8  bg-customBlue p-2 rounded-lg" src="./Assets/Logo.png" alt="">         
-       <h3 class="text-2xl text-customBlue font-semibold">Brand</h3>  
-    </article>
-    <p class="w-4/6 text-gray-400 text-sm font-light">Best information about the company gies here but now lorem ipsum is</p>
-    <div class="text-sm text-white space-x-1">
-        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-            <i class="fa-brands fa-square-facebook bg-slate-400 duration-500 ease-in-out hover:bg-customBlue p-3 rounded-full"></i>
-        </a>
-        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
-            <i class="fa-brands fa-twitter bg-slate-400 duration-500 ease-in-out hover:bg-black p-3 rounded-full"></i>
-        </a>
-        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-            <i class="fa-brands fa-instagram bg-slate-400 duration-500 ease-in-out hover:bg-red-700 p-3 rounded-full"></i>
-        </a>
-        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin bg-slate-400 duration-500 ease-in-out hover:bg-customBlue p-3 rounded-full"></i>
-        </a>
-        <a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
-            <i class="fa-brands fa-youtube bg-slate-400 duration-500 ease-in-out hover:bg-red-800 p-3 rounded-full"></i>
-        </a>
-    </div>
-    
+        <!-- Recommended items -->
+        <section class="space-y-7">
+            <h5 class="text-2xl font-semibold">Recommended items</h5>
+            <div id="Recommended-items" class="grid grid-cols-5 place-items-center gap-3">
+                <!-- products added using js -->
             </div>
-            <!-- about  -->
-            <div class="flex flex-col gap-1 text-slate-500 font-light ">
-                <span class="text-black font-semibold text-">About</span>
-                <a href="#">
-                    About us
-                </a>
-                <a href="#">
-                    find store
-                </a>
-                <a href="#">
-                    category
-                </a>
-                <a href="#">
-                    blogs
-                </a>
-            </div>
-            <!-- partnership -->
-            <div class="flex flex-col gap-1 text-slate-500 font-light ">
-                <span class="text-black font-semibold text-">partnership</span>
-                <a href="#">
-                    About us
-                </a>
-                <a href="#">
-                    find store
-                </a>
-                <a href="#">
-                    category
-                </a>
-                <a href="#">
-                    blogs
-                </a>
-            </div>
-            <!-- information -->
-            <div class="flex flex-col gap-1 text-slate-500 font-light ">
-                <span class="text-black font-semibold text-">information</span>
-                <a href="#">
-                    help center
-                </a>
-                <a href="#">
-                    money refund
-                </a>
-                <a href="#">
-                    shipping
-                </a>
-                <a href="#">
-                    contact us
-                </a>
-            </div>
-            <!-- for users -->
-            <div class="flex flex-col gap-1 text-slate-500 font-light ">
-                <span class="text-black font-semibold text-">for users</span>
-                <a href="#">
-                    login
-                </a>
-                <a href="#">
-                    register
-                </a>
-                <a href="#">
-                    settings
-                </a>
-                <a href="#">
-                    my orders
-                </a>
-            </div>
-            <!-- get app  -->
-            <div class="space-y-1">
-                <span class="font-semibold"> Get App</span>
-                <img class="w-24" src="./Assets/appStore.png" alt="">
-                <img class="block w-24" src="./Assets/playStore.png" alt="">
-            </div>
-         </section>
-         <section class="flex justify-between px-5 py-3 capitalize">
-            <span>© 2023 Ecommerce. </span>
-            <span> 
-                <!-- img -->
-                <img class="inline-block w-6" src="./Assets//regions/icon-1.png" alt=""> 
-                <!-- label -->
-                english
-                <!-- icon  -->
-                 <i class="fa-solid fa-chevron-up block text-sm"></i></span>
-         </section>
-    </Footer>
+        </section>
+        <!-- our extrA services -->
+        <section class="capitalize space-y-5">
+            <h5 class="text-2xl font-semibold">our extra services</h5>
+            <section class="grid grid-cols-4 gap-3 place-items-center">
+                <!-- Source from industry hubs  -->
+                <article class="bg-white relative inline-block space-y-12 rounded-md border border-slate-300 shadow-sm">
+                    <img class=" inset-0 bg-black/70 rounded-t-md" src="./Assets/ExtraServices/service-4.png"
+                        alt="Source from industry hubs">
+                    <i class="fa-solid fa-magnifying-glass absolute right-3  top-14
+                    text-black p-4 bg-slate-300 rounded-full "></i>
+                    <p class="px-5 py-1 font-semibold w-[70%]">Source from industry hubs</p>
+                </article>
+                <!-- Customize Your Products  -->
+                <article class="bg-white relative inline-block space-y-12 rounded-md border border-slate-300 shadow-sm">
+                    <img class=" inset-0 bg-black/70 rounded-t-md" src="./Assets/ExtraServices/service-3.png"
+                        alt="Customize Your Products">
+                    <i class="fa-solid fa-inbox absolute right-3  top-14
+                    text-black p-4 bg-slate-300 rounded-full "></i>
+                    <p class="px-5 py-1 font-semibold w-[70%]">Customize Your Products</p>
+                </article>
+                <!-- Fast, reliable shipping by ocean or air  -->
+                <article class="bg-white relative inline-block space-y-12 rounded-md border border-slate-300 shadow-sm">
+                    <img class=" inset-0 bg-black/70 rounded-t-md" src="./Assets/ExtraServices/sercive-2.png"
+                        alt="Fast, reliable shipping by ocean or air">
+                    <i class="fa-solid fa-paper-plane absolute right-3  top-14
+                    text-black p-4 bg-slate-300 rounded-full "></i>
+                    <p class="px-5 py-1 font-semibold w-[70%]">Fast, reliable shipping by ocean or air</p>
+                </article>
+                <!-- Product monitoring and inspection  -->
+                <article class="bg-white relative inline-block space-y-12 rounded-md border border-slate-300 shadow-sm">
+                    <img class=" inset-0 bg-black/70 rounded-t-md" src="./Assets/ExtraServices/service-1.png"
+                        alt="Product monitoring and inspection">
+                    <i class="fa-solid fa-shield-halved absolute right-3  top-14
+                    text-black p-4 bg-slate-300 rounded-full "></i>
+                    <p class="px-5 py-1 font-semibold w-[70%]">Product monitoring and inspection</p>
+                </article>
+            </section>
+
+        </section>
+        <!-- regions -->
+        <section class="capitalize  space-y-7 ">
+            <h6 class="text-2xl font-semibold">suppliers by region</h6>
+            <ul class="grid grid-cols-5 gap-x-20 gap-y-3 px-10">
+                <!-- Arabic emirates -->
+                <li class="flex gap-x-2 items-center">
+                    <img class="w-7" src="./Assets/regions/region3.png" alt="Arabic emirates">
+                    <div class="leading-3">
+                        <h4 class="text-xs">Arabic emirates</h4>
+                        <a href="#" class="text-[0.55rem] text-slate-400">Shopname.ae</a>
+                    </div>
+                </li>
+                <!-- australia -->
+                <li class="flex gap-x-2 items-center">
+                    <img class="w-7" src="./Assets/regions/region1.png" alt="australia">
+                    <div class="leading-3">
+                        <h4 class="text-xs">australia</h4>
+                        <a href="#" class="text-[0.55rem] text-slate-400">Shopname.ae</a>
+                    </div>
+                </li>
+                <!-- United States -->
+                <li class="flex gap-x-2 items-center">
+                    <img class="w-7" src="./Assets/regions/region4.png" alt="United States">
+                    <div class="leading-3">
+                        <h4 class="text-xs">United States</h4>
+                        <a href="#" class="text-[0.55rem] text-slate-400">Shopname.ae</a>
+                    </div>
+                </li>
+                <!-- russia -->
+                <li class="flex gap-x-2 items-center">
+                    <img class="w-7" src="./Assets/regions/region-6.png" alt="russia">
+                    <div class="leading-3">
+                        <h4 class="text-xs">russia</h4>
+                        <a href="#" class="text-[0.55rem] text-slate-400">Shopname.ae</a>
+                    </div>
+                </li>
+                <!-- italy -->
+                <li class="flex gap-x-2 items-center">
+                    <img class="w-7" src="./Assets/regions/region9.png" alt="italy">
+                    <div class="leading-3">
+                        <h4 class="text-xs">italy</h4>
+                        <a href="#" class="text-[0.55rem] text-slate-400">Shopname.ae</a>
+                    </div>
+                </li>
+                <!-- denmark -->
+                <li class="flex gap-x-2 items-center">
+                    <img class="w-7" src="./Assets/regions/region2.png" alt="denmark">
+                    <div class="leading-3">
+                        <h4 class="text-xs">denmark</h4>
+                        <a href="#" class="text-[0.55rem] text-slate-400">Shopname.ae</a>
+                    </div>
+                </li>
+                <!-- france -->
+                <li class="flex gap-x-2 items-center">
+                    <img class=" w-7" src="./Assets/regions/region5.png" alt="france">
+                    <div class="leading-3">
+                        <h4 class="text-xs">France</h4>
+                        <a href="#" class="text-[0.55rem] text-slate-400">Shopname.ae</a>
+                    </div>
+                </li>
+                <!-- arabic emirates -->
+                <li class="flex gap-x-2 items-center">
+                    <img class=" w-7" src="./Assets/regions/region3.png" alt="Arabic emirates">
+                    <div class="leading-3">
+                        <h4 class="text-xs">Arabic emirates</h4>
+                        <a href="#" class="text-[0.55rem] text-slate-400">Shopname.ae</a>
+                    </div>
+                </li>
+                <!-- china -->
+                <li class="flex gap-x-2 items-center">
+                    <img class=" w-7" src="./Assets/regions/region7.png" alt="china">
+                    <div class="leading-3">
+                        <h4 class="text-xs">china</h4>
+                        <a href="#" class="text-[0.55rem] text-slate-400">Shopname.ae</a>
+                    </div>
+                </li>
+                <!-- great britain -->
+                <li class="flex gap-x-2 items-center">
+                    <img class="w-7" src="./Assets/regions/region8.png" alt="great britain">
+                    <div class="leading-3">
+                        <h4 class="text-xs">Great britain</h4>
+                        <a href="#" class="text-[0.55rem] text-slate-400">Shopname.ae</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    <script type="module" src="./jsfiles/index.js"></script>
 </body>
+
 </html>
