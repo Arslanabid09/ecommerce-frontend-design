@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Design</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- fontAwesome icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="font-inter bg-slate-200">
+    <div id="navbar-placeholder">
+        <!-- header using js -->
+    </div>
+    <main class="p-14 capitalize space-y-20">
+        <!-- cart -->
+        <section class="flex justify-between items-center  ">
+            <!-- cart products -->
+            <section class="w-full space-y-3 ">
+                <h1 class="text-2xl font-semibold">my cart(3)</h1>
+                <section class="bg-white border border-slate-300  rounded-md ">
+                    <div class="flex justify-between p-4 border-b border-slate-300">
+                        <div class="flex gap-2 items-start ">
+                            <img class="w-20  p-2 border object-contain bg-slate-200 border-slate-300  rounded-md" src="./Assets/recomanded-items/1.png" alt="">
+                            <div class="sapcy-3">  
+                            <p class="font-medium text-lg">
+                                T-shirts with multiple colors, for men and lady
+                            </p>
+                            <p class="text-slate-400 text-sm">Size: medium, Color: blue,  Material: Plastic <br>
+                                Seller: Artel Market</p>
+                                <div class="font-medium mt-2">
+                                    <button class="border border-slate-300 text-red-500 py-1 px-2 rounded-md">Remove</button>
+                                    <button class="border border-slate-300 text-customBlue rounded-md py-1 px-2">Save for later</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end space-y-2">
+                            <span class="font-semibold">$79.99</span>
+                            <span class="flex gap-8 items-center border border-slate-300 rounded-md px-2 py-1">
+                                Qty:9 
+                               <i class="fa-solid fa-chevron-down block text-xs"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-4 border-b border-slate-300">
+                        <div class="flex gap-2 items-start ">
+                            <img class="w-20 p-2 border object-contain bg-slate-200 border-slate-300  rounded-md" src="./Assets/recomanded-items/5.png" alt="">
+                            <div class="sapcy-3">  
+                            <p class="font-medium text-lg">
+                                T-shirts with multiple colors, for men and lady
+                            </p>
+                            <p class="text-slate-400 text-sm">Size: medium, Color: blue,  Material: Plastic <br>
+                                Seller: Artel Market</p>
+                                <div class="font-medium mt-2">
+                                    <button class="border border-slate-300 text-red-500 py-1 px-2 rounded-md">Remove</button>
+                                    <button class="border border-slate-300 text-customBlue rounded-md py-1 px-2">Save for later</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end space-y-2">
+                            <span class="font-semibold">$79.99</span>
+                            <span class="flex gap-8 items-center border border-slate-300 rounded-md px-2 py-1">
+                                Qty:9 
+                               <i class="fa-solid fa-chevron-down block text-xs"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-4 border-b border-slate-300">
+                        <div class="flex gap-2 items-start ">
+                            <img class="w-20 border object-contain bg-slate-200 border-slate-300  p-2 rounded-md" src="./Assets/HomeAndOutdoor/4.png" alt="">
+                            <div class="sapcy-3">  
+                            <p class="font-medium text-lg">
+                                T-shirts with multiple colors, for men and lady
+                            </p>
+                            <p class="text-slate-400 text-sm">Size: medium, Color: blue,  Material: Plastic <br>
+                                Seller: Artel Market</p>
+                                <div class="font-medium mt-2">
+                                    <button class="border border-slate-300 text-red-500 py-1 px-2 rounded-md">Remove</button>
+                                    <button class="border border-slate-300 text-customBlue rounded-md py-1 px-2">Save for later</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-end space-y-2">
+                            <span class="font-semibold">$79.99</span>
+                            <span class="flex gap-8 items-center border border-slate-300 rounded-md px-2 py-1">
+                                Qty:9 
+                               <i class="fa-solid fa-chevron-down block text-xs"></i>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- checkout -->
+            <section class="w-[30%] p-3 space-y-2">
+                <!-- coupon -->
+                <div class="bg-white border border-slate-300 rounded-md  px-3 py-2 space-y-2">
+                    <p class="text-neutral-700 text-sm">have a coupon?</p>
+                    <div class="flex border border-slate-300 rounded-md">
+                        <input type="text" class="bg-transparent p-2 " placeholder="Add coupon">
+                        <button class="px-5 border-l border-slate-300 text-customBlue font-medium">Apply</button>
+                    </div>
+                </div>
+                <!-- checkout -->
+                <div class="max-w-sm mx-auto bg-white border p-3 border-slate-300 rounded-md">
+                    <table class="table-auto w-full text-sm  ">
+                      <tbody>
+                        <tr>
+                          <td class="py-2 text-gray-700">Subtotal:</td>
+                          <td class="py-2 text-right text-gray-700 font-medium">$1403.97</td>
+                        </tr>
+                        <tr>
+                          <td class="py-2 text-gray-700">Discount:</td>
+                          <td class="py-2 text-right text-red-600 font-medium">- $60.00</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 text-gray-700">Tax:</td>
+                            <td class="py-2 text-right text-green-600 font-medium">+ $14.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr class="mt-4 border-slate-300">
+                <div class="flex justify-between items-center p-3">
+                    <span>total</span>
+                    <span>$999.00</span>
+                </div>
+                <button class="bg-[#00B517] rounded-md text-lg font-medium py-2 w-full text-white">Checkout</button>
+                <div class="flex justify-center items-center gap-3 mt-2">
+                    <img class="w-8 cursor-pointer object-cover" src="./Assets/payment.png" alt="payment methods" loading="lazy">
+                    <img class="w-8 cursor-pointer object-cover" src="./Assets/payment-1.png" alt="payment methods" loading="lazy">
+                    <img class="w-8 cursor-pointer object-cover" src="./Assets/payment-2.png" alt="payment methods" loading="lazy">
+                    <img class="w-8 cursor-pointer object-cover" src="./Assets/payment-3.png" alt="payment methods" loading="lazy">
+                    <img class="w-8 cursor-pointer object-cover" src="./Assets/payment-4.png" alt="payment methods" loading="lazy">
+                </div>
+                  </div>
+                  
+                  
+            </section>
+        </section>
+        <!-- free delivary etc -->
+         <ul class="flex gap-20">
+            <li class="flex gap-3 items-center">
+                <i class="fa-solid fa-lock bg-slate-300 rounded-full text-slate-500 p-3"></i>
+                <div class="leading-5">
+                    <span class="text-sm">secure payment</span><br>
+                    <span class="text-xs text-slate-400">Have you ever finally just </span>
+                </div>
+            </li>
+            <li class="flex gap-3 items-center">
+                <i class="fa-solid fa-message bg-slate-300 rounded-full text-slate-500 p-3"></i>
+                <div class="leading-5">
+                    <span class="text-sm">Customer support</span><br>
+                    <span class="text-xs text-slate-400">Have you ever finally just </span>
+                </div>
+            </li>
+            <li class="flex gap-3 items-center">
+                <i class="fa-solid fa-truck bg-slate-300 rounded-full text-slate-500 p-3"></i>
+                <div class="leading-5">
+                    <span class="text-sm">Free delivery</span><br>
+                    <span class="text-xs text-slate-400">Have you ever finally just </span>
+                </div>
+            </li>
+         </ul>
+        <!-- saved for later -->
+         <section class="bg-white py-5 px-10 space-y-4 rounded-md border border-slate-300">
+            <h4 class="text-2xl font-semibold">Saved for later</h4>
+            <div id="product-container" class="grid grid-cols-4  ">
+                <!-- products added using js -->
+            </div>
+         </section>
+<!-- super discount -->
+<section class=" bg-customBlue text-white flex justify-between items-center py-8 px-8 rounded-md ">
+    <div class="space-y-1">
+    <h5 class="text-xl font-semibold">Super discount on more than 100 USD</h5>
+    <p class="text-sm font-light tracking-wide">Have you ever finally just write dummy info</p>
+    </div>
+    <button class="bg-yellow-500 text-slate-100 px-8 py-[0.29rem] rounded">Shop now</button>
+</section>
+    </main>
+    <div id="footer-placeholder">
+        <!-- footer using js -->
+    </div>
+    <script type="module" src="./jsfiles/productscart.js"></script>
+</body>
+</html>

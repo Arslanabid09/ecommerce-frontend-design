@@ -314,5 +314,74 @@ const dealsAndOffers = [
     "image": "/Assets/Electronics/8.png"
   },
  
- ]   
-  export {homeAndOutDoor,electronicsProducts,recommandedItems,dealsAndOffers,productsList}
+ ]  
+  // you may like 
+  const youMayLike = [
+    {
+      "id":1,
+      "name":"Men Blazers Sets Elegant Formal",
+      "price":"$7.00 - $99.50",
+      "image":"/Assets/recomanded-items/3.png"
+    },
+    {
+      "id":2,
+      "name":"Men Blazers Sets Elegant Formal",
+      "price":"$7.00 - $99.50",
+      "image":"/Assets/recomanded-items/1.png"
+    },
+    {
+      "id":3,
+      "name":"Apple Watch Series Space Gray",
+      "price":"$7.00 - $99.50",
+      "image":"/Assets/recomanded-items/2.png"
+    },
+    {
+      "id":4,
+      "name":"Basketball Crew Socks Long Stuff",
+      "price":"$7.00 - $99.50",
+      "image":"/Assets/recomanded-items/4.png"
+    },
+    {
+      "id":5,
+      "name":"New Summer Men's  castrol T-Shirts",
+      "price":"$7.00 - $99.50",
+      "image":"/Assets/recomanded-items/5.png"
+    },
+    
+  ]
+  // saved for later 
+  const SavedForLater = [
+    {
+      id: 1,
+      name: "GoPro HERO6 4K Action Camera - Black",
+      price: 99.50,
+      image: "../Assets/Electronics/7.png"
+    },
+    {
+      id: 2,
+      name: "GoPro HERO6 4K Action Camera - Black",
+      price: 99.50,
+      image: "../Assets/Electronics/10.png"
+    },
+    {
+      id: 3,
+      name: "GoPro HERO6 4K Action Camera - Black",
+      price: 99.50,
+      image: "../Assets/Electronics/1.png"
+    },
+    {
+      id: 4,
+      name: "GoPro HERO6 4K Action Camera - Black",
+      price: 99.50,
+      image: "../Assets/Electronics/6.png"
+    },
+    
+  ];
+  export {homeAndOutDoor,
+          electronicsProducts,
+          recommandedItems,
+          dealsAndOffers,
+          productsList,
+          youMayLike,
+          SavedForLater
+        }

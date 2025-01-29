@@ -10,13 +10,207 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="font-inter">
+<body class="font-inter bg-slate-200">
     <!-- header -->
     <div id="navbar-placeholder">
         <!-- added using js  -->
     </div>
-    <main class="py-20">
+    <main class="p-10 space-y-10">
+        <!-- prodcut details section -->
+         <section class="bg-white flex gap-3 justify-between items-start w-full border border-slate-300 rounded-md px-3 py-10 capitalize">
+            <!-- prodcuts imgs etc -->
+            <section class="flex flex-col gap-3 mx-4 items-center">
+             <img id="productImage" src="" class="border border-slate-300 rounded-lg object-cover w-[23rem]"  alt="product-image">
+             <div class="flex gap-2 items-center">
+                <img class="w-12 h-12 border border-slate-400  p-1 object-contain rounded-md" src="./Assets/image 35.png" alt="">
+                <img class="w-12 h-12 border border-slate-300  p-1 object-contain rounded-md" src="./Assets/image 36.png" alt="">
+                <img class="w-12 h-12 border border-slate-300  p-1 object-contain rounded-md" src="./Assets/image 37.png" alt="">
+                <img class="w-12 h-12 border border-slate-300  p-1 object-contain rounded-md" src="./Assets/image 38.png" alt="">
+                <img class="w-12 h-12 border border-slate-300  p-1 object-contain rounded-md" src="./Assets/image 39.png" alt="">
+                <img class="w-12 h-12 border  p-1 object-cover border-slate-300  rounded-md" src="./Assets/image 40.png" alt="">
+             </div>
+            </section>
+            <!-- prodcuts info -->
+            <section class="w-[50%] space-y-4">
+                <span class="text-green-600 text-sm"><i class="fa-solid fa-check"></i> in stock</span>
+                <h1 id="product-title" class="text-3xl font-medium"></h1>
+                <div class="flex gap-4 items-center">
+                    <!-- ratings -->
+                    <span class="cursor-pointer text-[0.60rem]  text-yellow-500">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span id="product-ratings" class="text-sm mx-1"></span>
+                    </span>
+                    <!-- /reviews -->
+                    <span class="cursor-pointer text-sm  text-slate-400 ">
+                        <i class="fa-solid fa-message text-xs "></i>
+                        <span class="">32 reviews</span>
+                    </span>
+                    <!-- sold  -->
+                    <span class="cursor-pointer text-sm  text-slate-400 ">
+                        <i class="fa-solid fa-truck-fast text-xs "></i>
+                        <span id="product-sold"></span>
+                    </span>
+                </div>
+                <div class="bg-red-400/40 p-4 flex justify-around">
+                    <p class="text-red-600 font-semibold text-lg  px-2">$98.00
+                        <small class="block text-xs font-normal text-slate-500">50-100 pcs</small>
+                    </p>
+                    <p class="font-semibold text-lg border-l border-slate-400 px-2">$90.00
+                        <small class="block text-xs font-normal text-slate-500">100-170 pcs</small>
+                    </p>
+                    <p class="font-semibold text-lg border-l border-slate-400 px-2">$78.00
+                        <small class="block text-xs font-normal text-slate-500">700+ pcs</small>
+                    </p>
+                </div>
+                <!-- detailes -->
+                    <div class="flex gap-24 items-center border-b border-slate-400 p-3">
+                        <span class="text-slate-400">price:</span>
+                        <span class="text-neutral-700">Negotiable</span>
+                    </div>
+                    <div class="border-b  space-y-4 border-slate-400 p-3">
+                        <div class="flex gap-24">
+                            <span class="text-slate-400">type:</span>
+                        <span class="text-neutral-700">classic shoes</span>
+                        </div>
+                        <div class="flex gap-20">
+                            <span class="text-slate-400">material:</span>
+                        <span class="text-neutral-700">plastic material</span>
+                        </div>
+                        <div class="flex gap-20">
+                            <span class="text-slate-400">design:</span>
+                            <span class="text-neutral-700">modren nice</span>
+                        </div>
+                    </div>
+                    <div class="border-b space-y-4 border-slate-400 p-3">
+                        <div class="flex gap-14">
+                            <span class="text-slate-400">Customization:</span>
+                        <span class="text-neutral-700">Customized logo and design custom packages</span>
+                        </div>
+                        <div class="flex gap-20">
+                            <span class="text-slate-400">protection:</span>
+                        <span class="text-neutral-700">refund policy</span>
+                        </div>
+                        <div class="flex gap-20">
+                            <span class="text-slate-400">warranty:</span>
+                            <span class="text-neutral-700">2 years full warranty nice</span>
+                        </div>
+                    </div>
+                    
 
+            </section>
+            <!-- supplier info etc -->
+            <section class="w-[25%] relative p-4 rounded-md border border-slate-300">
+                <div class="flex gap-3 border-b border-slate-300 pb-4">
+                    <span class="inline-block bg-emerald-300 text-2xl text-slate-500  w-12 h-12  py-2 text-center rounded-lg">R</span>
+                    <div>
+                        <span>Supplier</span><br>
+                    <span>Guanjoi Trading LLC</span>
+                    </div>
+                </div>
+                <ul class=" space-y-3 text-sm text-slate-400 py-3">
+                    <li class="space-x-1">
+                        <img class="inline-block w-5" src="./Assets/regions/DE@2x.png" alt="" loading="lazy">
+                        <span>Germany, Berlin</span>
+                    </li>
+                    <li class="space-x-1">
+                        <i class="fa-solid fa-shield"></i>
+                        <span>Verified Seller</span>
+                    </li>
+                    <li class="space-x-1">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        <span>Worldwide shipping</span>
+                    </li>
+                    <button class="bg-customBlue text-white w-full py-2 font-medium rounded-lg">send inquiry</button>
+                    <button class=" text-customBlue border border-slate-300 rounded-lg w-full py-2">sellers profile</button>
+                </ul>
+                <button class="flex items-center gap-2 absolute -bottom-14 left-14 text-customBlue font-medium" >
+                    <i class="fa-regular fa-heart"></i> save for later</button>
+            </section>
+         </section>
+        <!-- product reviews etc -->
+         <section class="h-auto flex gap-3 justify-between">
+            <!-- about and reviewsof product -->
+            <section class="capitalize w-full border bg-white border-slate-300 rounded overflow-hidden space-y-2">
+                <ul class="flex items-center gap-8 text-sm border-b border-slate-300 font-semibold px-6 ">
+                    <li class="border-b-2 border-blue-600 px-2 py-2  cursor-pointer">Description</li>
+                    <li class="cursor-pointer">Reviews</li>
+                    <li class="cursor-pointer">Shipping</li>
+                    <li class="cursor-pointer">About seller</li>
+                </ul>
+                <p class="text-sm text-justify p-3 text-neutral-700 ">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                </p>
+                <div class="overflow-x-auto px-4">
+                    <table class="w-[50%] text-sm border-collapse border border-gray-300 ">
+                      <tbody>
+                        <tr class="border-t border-gray-300">
+                          <td class="px-4 py-2 font-medium text-gray-700 bg-gray-100">Model</td>
+                          <td class="px-4 py-2 text-gray-800">#8786867</td>
+                        </tr>
+                        <tr class="border-t border-gray-300">
+                          <td class="px-4 py-2 font-medium text-gray-700 bg-gray-100">Style</td>
+                          <td class="px-4 py-2 text-gray-800">Classic style</td>
+                        </tr>
+                        <tr class="border-t border-gray-300">
+                          <td class="px-4 py-2 font-medium text-gray-700 bg-gray-100">Certificate</td>
+                          <td class="px-4 py-2 text-gray-800">ISO-898921212</td>
+                        </tr>
+                        <tr class="border-t border-gray-300">
+                          <td class="px-4 py-2 font-medium text-gray-700 bg-gray-100">Size</td>
+                          <td class="px-4 py-2 text-gray-800">34mm x 450mm x 19mm</td>
+                        </tr>
+                        <tr class="border-t border-gray-300">
+                          <td class="px-4 py-2 font-medium text-gray-700 bg-gray-100">Memory</td>
+                          <td class="px-4 py-2 text-gray-800">36GB RAM</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  
+                <div class="p-6 text-neutral-600">
+                <p class="">
+                <i class="fa-solid fa-check pr-2"></i>
+                Some great feature name here
+                </p>
+                <p>
+                    <i class="fa-solid fa-check pr-2"></i>
+                    Lorem ipsum dolor sit amet, consectetur 
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-check pr-2"></i>
+                        Duis aute irure dolor in reprehenderit                        </p>
+                        <p class="">
+                            <i class="fa-solid fa-check pr-2"></i>
+                            Some great feature name here
+                            </p>
+                </div>
+            </section>
+            <!-- you may like -->
+            <section  id="youMay-like" class="capitalize space-y-5 w-[30%] border border-slate-300 rounded px-2 py-3 bg-white">
+                <h3 class="text-lg font-semibold">you may like</h3>
+                <!-- products added using js -->
+            </section>
+         </section>
+        <!-- related products -->
+        <section class="bg-white rounded-md px-8 py-3 space-y-8 border border-slate-300">
+            <h4 class="text-2xl font-semibold">Related Products</h4>
+            <div id="product-container" class="grid grid-cols-6 gap-2">
+                <!-- products added using js -->
+            </div>
+        </section>
+        <!-- super discount -->
+         <section class=" bg-customBlue text-white flex justify-between items-center py-8 px-8 rounded-md">
+            <div class="space-y-1">
+            <h5 class="text-xl font-semibold">Super discount on more than 100 USD</h5>
+            <p class="text-sm font-light tracking-wide">Have you ever finally just write dummy info</p>
+            </div>
+            <button class="bg-yellow-500 text-slate-100 px-8 py-[0.29rem] rounded">Shop now</button>
+        </section>
     </main>
     <!-- footer  -->
     <div id="footer-placeholder">

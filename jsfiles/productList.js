@@ -49,7 +49,7 @@ productContainer.innerHTML = productsList.map((product)=>{
                         
                         </div>
                     <p class="text-slate-500 font-light text-sm">${product.description}</p>
-                    <a href="/ProductDetail.html" class="text-customBlue font-medium">view details</a>
+                    <a href="/ProductDetail.html?id=${product.id}&title=${product.title}&image=${product.image}&rating=${product.rating}&orders=${product.orders}" class="text-customBlue font-medium">view details</a>
                 </div>
             </article>
                             `
@@ -70,7 +70,7 @@ productContainer.innerHTML = productsList.map((product)=>{
                             <i class="fa-regular fa-star"></i>
                             <span >${product.rating}</span>
                             </div>
-                            <a href="/ProductDetail.html" class="text-slate-500 font-light text-sm">${product.title}</a>
+                            <a href="/ProductDetail.html?id=${product.id}&title=${product.title}&image=${product.image}&rating=${product.rating}&orders=${product.orders}" class="text-slate-500 font-light text-sm">${product.title}</a>
                             </div>
                             </article>`
                         }
